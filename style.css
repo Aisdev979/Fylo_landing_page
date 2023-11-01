@@ -1,0 +1,363 @@
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Dark-Blue: hsl(217, 28%, 15%);
+    --Dark-Blue-main: hsl(218, 28%, 13%);
+    --Dark-Blue-footer: hsl(216, 53%, 9%);
+    --Dark-Blue-testimonials: hsl(219, 30%, 18%);
+
+    /* ### Accent */
+
+    --Cyan-inside-call-to-action-gradient: hsl(176, 68%, 64%);
+    --Blue-inside-call-to-action-gradient: hsl(198, 60%, 50%);
+    --Light-Red-error: hsl(0, 100%, 63%);
+
+    /* ### Neutral */
+
+    --White: hsl(0, 0%, 100%);
+
+    /* ## Typography */
+
+    /* ### Body Copy */
+
+    --Font-size: 0.875rem;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    color: var(--White);
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.fylo--header {
+    background-color: var(--Dark-Blue);
+    background-image: url("./images/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.fylo--main {
+    background-color: var(--Dark-Blue-main);
+}
+
+.fylo--footer {
+    background-color: var(--Dark-Blue-footer);
+}
+
+.fylo__nav,
+.fylo__access,
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.fylo__profile,
+.fylo__nav,
+.fylo__service,
+.fylo__testing,
+.fylo__testimonial,
+.fylo__access,
+.fylo__details {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+.fylo__profile,
+.fylo__service,
+.fylo__access {
+    text-align: center;
+}
+
+.fylo__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fylo__nav img {
+    max-width: 30%;
+}
+
+.fylo__nav--link a {
+    padding-right: 1em;
+    text-decoration: none;
+    color: var(--White);
+}
+
+.fylo__heading {
+    font-size: 2rem;
+    padding-bottom: 0.5em;
+}
+
+.fylo__text {
+    padding-bottom: 3em;
+}
+
+.fylo__link {
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--Blue-inside-call-to-action-gradient);
+    padding: 1em 3em;
+    border-radius: 50px;
+}
+
+.fylo--main {
+    padding-bottom: 9em;
+}
+
+.fylo__service section,
+.fylo__testing section {
+    padding-bottom: 5em;
+}
+
+.fylo__testing--text h2 {
+    padding-bottom: 1.5em;
+}
+
+.fylo__testing--text p {
+    padding-bottom: 1em;
+    line-height: 1.5em;
+}
+
+.fylo__testing--text a {
+    width: 170px;
+    display: flex;
+    gap: 0.5em;
+    color: var(--Blue-inside-call-to-action-gradient);
+    text-decoration: none;
+    border-bottom: 2px solid;
+    padding-bottom: 0.2em;
+}
+.fylo__testimonial {
+    position: relative;
+}
+
+.fylo__testimonial--img {
+    position: absolute;
+
+}
+
+.fylo__testimonial--details {
+    background-color: var(--Dark-Blue);
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 1em;
+}
+
+.fylo__testimonial--profile img {
+    display: inline-block;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.fylo__testimonial--profile {
+    display: flex;
+    align-items: center;
+    padding-top: 2em;
+    gap: 0.5em;
+}
+
+.fylo--footer {
+    position: relative;
+    padding-top: 15em;
+}
+
+.fylo__access {
+    position: absolute;
+    background-color: var(--Dark-Blue);
+    padding: 2em;
+    margin-top: 2em;
+    top: -12em;
+    left: 3em;
+    border-radius: 1em;
+}
+
+.fylo__access h2 {
+    padding-bottom: 1.5em;
+}
+
+.fylo__access input,
+.fylo__access button {
+    width: 100%;
+    margin-top: 2em;
+    border-radius: 50px;
+    padding: 1.4em;
+}
+
+.fylo__access button {
+    border: none;
+    color: var(--White);
+    background-color: var(--Cyan-inside-call-to-action-gradient);
+}
+
+.error {
+    color: var(--Light-Red-error);
+}
+
+.error:empty {
+    display: none;
+}
+
+.fylo__footer--logo {
+    display: inline-block;
+    margin-left: 3em;
+}
+
+.fylo__details--location,
+.fylo__details--contact section {
+    display: flex;
+    align-items: self-start;
+    gap: 1em;
+    padding-bottom: 2em;
+}
+
+.fylo__details--nav  a {
+    display: block;
+    text-decoration: none;
+    padding-bottom: 1em;
+    color: var(--White);
+}
+
+.fylo__details--social {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.fylo__details--social ion-icon {
+    display: inline-block;
+    padding: 1em;
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.fylo__details,
+.fylo__testimonial,
+.fylo__service {
+    display: grid;
+}
+
+.attribution {
+    font-size: 1.5e,;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--Cyan-inside-call-to-action-gradient);
+}
+
+@media(min-width: 600px) {
+    .fylo__details,
+    .fylo__testimonial,
+    .fylo__service {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    .fylo__details--nav section {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .fylo__details--social {
+        width: 100%;
+        margin-left: 8em;
+    }
+
+    .fylo__details--social ion-icon {
+        margin-right: 0.5em;
+    }
+
+    .fylo__access {
+        margin-left: 2em;
+    }
+}
+
+@media(min-width: 1000px) {
+
+    .fylo__testing {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .fylo__testimonial {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .fylo--footer {
+        padding-top: 18em;
+    }
+
+    .fylo__footer--logo {
+        margin-top: 2em;
+        margin-left: 8em;
+    }
+
+    .fylo__details {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2em;
+    }
+
+    .fylo__details--social {
+        width: 100%;
+        margin-left: 0.5em;
+    }
+
+    .fylo__testimonial--img {
+        top: 1em;
+    }
+
+    .fylo__access {
+        width: 70%;
+        margin-left: 5em;
+        padding-top: 6em;
+        padding-bottom: 5em;
+    }
+
+    .fylo__details--contact {
+        margin-left: 2em;
+    }
+
+    .fylo__details--nav {
+        width: 40%;
+        margin-left: 2em;
+    }
+
+    .fylo__details--nav + .fylo__details--nav {
+        margin-left: -2em;
+    }
+    .fylo__form {
+        display: flex;
+        align-items: self-start;
+        justify-content: space-between;
+    }
+
+    .fylo__form section {
+        width: 70%;
+    }
+
+    .fylo__access button {
+        width: 25%;
+    }
+
+    .fylo__details--social {
+        margin-left: -8em;
+    }
+}
